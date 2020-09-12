@@ -4,9 +4,6 @@ metadata:
   name: toytrendz 
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      name: toytrendz
   template:
     metadata:
       labels:
