@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: toytrendz 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: toytrendz 
+    spec:
+      containers:
+        - name: toytrendz 
+          image: toytrendz.azurecr.io/toytrendz
+          ports:
+          - containerPort: 80
